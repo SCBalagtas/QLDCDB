@@ -1,0 +1,131 @@
+/* Reset all styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Login form styles */
+.rootContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+  background-color: none;
+  text-align: center;
+}
+
+.message {
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  padding-top: 10px;
+  background-color: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.message a {
+  text-decoration: none;
+  color: #1e74ff;
+}
+
+.formContainer {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  width: 400px;
+  padding-top: 25px;
+  background-color: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.formContainer button {
+  bottom: 15%;
+  left: 100px;
+  color: white;
+  background-color: #1e74ff;
+  width: 200px;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid #1e74ff;
+  transition-duration: 0.4s;
+}
+
+.formContainer button:hover {
+  color: #1e74ff;
+  background: none;
+  border: 2px solid #1e74ff;
+  box-shadow: 0px 0px 10px #1e74ff;
+}
+
+.formLabel {
+  position: absolute;
+  left: 5%;
+}
+
+.formInput {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.toggleContainer {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  padding-top: 15px;
+  width: 400px;
+  height: 40px;
+  background-color: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.toggleContainer a {
+  text-decoration: none;
+}
+
+#loginForm {
+  height: 50%;
+}
+
+#registerForm {
+  height: 70%;
+}
+
+#emailInput label {
+  top: 30px;
+}
+
+#emailInput input {
+  top: 60px;
+}
+
+#passwordInput label {
+  top: 110px;
+}
+
+#passwordInput input {
+  top: 140px;
+}
+
+#passwordInput #confirmPasswordLabel {
+  top: 190px;
+}
+
+#passwordInput #confirmPasswordInput {
+  top: 220px;
+}

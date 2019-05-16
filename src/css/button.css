@@ -1,0 +1,25 @@
+/* Reset all styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  padding: 5px 10px 10px 10px;
+  border: 0;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}

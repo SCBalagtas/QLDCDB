@@ -1,0 +1,122 @@
+/* Reset all styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styles */
+.mainContainer {
+  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px black;
+  text-align: center;
+}
+
+/* Welcome message styles */
+#welcomeMessage h1 {
+  padding: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 48px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+#welcomeMessage p {
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+#searchDatabaseButton {
+  position: relative;
+  color: white;
+  background-color: #1e74ff;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 20px 20px 20px;
+  border: 2px solid #1e74ff;
+}
+
+#searchDatabaseButton:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px black;
+}
+
+/* Adjust the welcome message container if max-width is below 750px */
+@media (max-width: 750px) {
+  #welcomeMessage {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Search container styles */
+.searchContainerNotifier {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+#searchContainerTitle {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+#searchContainerTitle a {
+  text-decoration: none;
+  color: #1e74ff;
+}
+
+.selectDropdown {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  text-align: left;
+}
+
+.selectLabel {
+  text-align: left;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#searchContainer button {
+  position: relative;
+  color: white;
+  background-color: #1e74ff;
+  width: 250px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 20px 20px 20px;
+  border: 2px solid #1e74ff;
+}
+
+#searchContainer button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px black;
+}
