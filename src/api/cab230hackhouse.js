@@ -4,9 +4,12 @@ import { useState, useEffect } from "react";
 // Define variable to hold the JSON Web Token.
 let JWT = null;
 
+// Define a constant variable to hold the root url.
+const api = "https://cab230.hackhouse.sh";
+
 // Function for registering new account, contains POST request to the /register endpoint of the API.
 export function Register(inputtedEmail, inputtedPassword) {
-  const url = "https://cab230.hackhouse.sh/register";
+  const url = api + "/register";
 
   // Encode the email and passwords.
   const email = encodeURI(inputtedEmail);
@@ -42,7 +45,7 @@ export function Register(inputtedEmail, inputtedPassword) {
 
 // Function for logging in, contains POST request to the "/login" endpoint of the API.
 export function Login(inputtedEmail, inputtedPassword) {
-  const url = "https://cab230.hackhouse.sh/login";
+  const url = api + "/login";
 
   // Encode the email and password.
   const email = encodeURI(inputtedEmail);
@@ -89,7 +92,7 @@ export function IsToken() {
 
 // Function for hitting the open endpoint "/offences" of the API.
 function GetOffences() {
-  return fetch("https://cab230.hackhouse.sh/offences")
+  return fetch(api + "/offences")
     .then(response => response.json())
     .then(response => response.offences);
 }
@@ -121,7 +124,7 @@ export function UseGetOffences() {
 
 // Function for hitting the open endpoint "/areas" of the API.
 function GetAreas() {
-  return fetch("https://cab230.hackhouse.sh/areas")
+  return fetch(api + "/areas")
     .then(response => response.json())
     .then(response => response.areas);
 }
@@ -153,7 +156,7 @@ export function UseGetAreas() {
 
 // Function for hitting the open endpoint "/ages" of the API.
 function GetAges() {
-  return fetch("https://cab230.hackhouse.sh/ages")
+  return fetch(api + "/ages")
     .then(response => response.json())
     .then(response => response.ages);
 }
@@ -185,7 +188,7 @@ export function UseGetAges() {
 
 // Function for hitting the open endpoint "/genders" of the API.
 function GetGenders() {
-  return fetch("https://cab230.hackhouse.sh/genders")
+  return fetch(api + "/genders")
     .then(response => response.json())
     .then(response => response.genders);
 }
@@ -217,7 +220,7 @@ export function UseGetGenders() {
 
 // Function for hitting the open endpoint "/years" of the API.
 function GetYears() {
-  return fetch("https://cab230.hackhouse.sh/years")
+  return fetch(api + "/years")
     .then(response => response.json())
     .then(response => response.years);
 }
@@ -284,7 +287,7 @@ function Search(offence, areas, ages, genders, years) {
   getParam.headers = head;
 
   //The URL
-  const baseUrl = "https://cab230.hackhouse.sh/search?";
+  const baseUrl = api + "/search?";
   const query = `offence=${offence}`;
   let url = "";
 
